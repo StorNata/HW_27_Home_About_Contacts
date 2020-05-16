@@ -1,0 +1,6 @@
+framework module Pods_HW_27_Home_About_Contacts {
+  umbrella header "Pods-HW_27_Home_About_Contacts-umbrella.h"
+
+  export *
+  module * { export * }
+}
