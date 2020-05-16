@@ -14,8 +14,11 @@ class UserController: ViewController {
     
     @IBOutlet private var photo: UIImageView?
     @IBOutlet private var name: UILabel?
-    @IBOutlet private var phone: UILabel?
-    @IBOutlet private var email: UILabel?
+    @IBOutlet private var phone: UITextView?
+    @IBOutlet private var email: UITextView?
+//    @IBAction private func hideKeyboard() {
+//        view.endEditing(true)
+//    }
     
     @IBOutlet private var dataSource = [Any]()
     
@@ -30,17 +33,33 @@ class UserController: ViewController {
 
        dataSource.append(contentsOf: DataProvider.shared.models())
         
+        //MARK: - setap text view
+        
+        phone?.delegate = self
+        email?.delegate = self
+        
+        phone?.dataDetectorTypes = .phoneNumber
+        email?.dataDetectorTypes = .all
+        
+        phone?.backgroundColor = .clear
+        email?.backgroundColor = .clear
+        
+        phone?.isEditable = false
+        email?.isEditable = false
+        
+        //MARK: - setup model
+        
         if let path = model?.photo {
                    photo?.sd_setImage(with: URL(string: path))
                }
                
         name?.text = model?.name
-        phone?.text = model?.phone
-        email?.text = model?.email
+        phone?.text = "Телефон: " + (model?.phone)!
+        email?.text = "email: " + (model?.email)! 
+        
            }
        
     }
-    
 
     
 

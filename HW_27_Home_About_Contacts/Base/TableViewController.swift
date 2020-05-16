@@ -59,11 +59,6 @@ class TableViewController: ViewController, UITableViewDataSource,  UITableViewDe
     //MARK: - UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let cell = cell as? SeparatedProtocol {
-            cell.separatedView?.isHidden = indexPath.row == dataSource.count - 1
-        }
-    }
-}
+    }    
+ }
+

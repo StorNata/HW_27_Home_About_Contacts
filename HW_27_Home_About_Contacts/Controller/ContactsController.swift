@@ -58,8 +58,5 @@ class ContactsController: ViewController, UITableViewDataSource, UITableViewDele
             controller.model = model
                    self.navigationController?.pushViewController(controller, animated: true)
     }
-
- 
 }
-  
 }

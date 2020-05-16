@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		051313D8246BB85E0042D929 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313D7246BB85E0042D929 /* TableViewController.swift */; };
 		051313DA246D00A00042D929 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313D9246D00A00042D929 /* NSObject.swift */; };
-		051313DC246D00DD0042D929 /* SeparatedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313DB246D00DD0042D929 /* SeparatedProtocol.swift */; };
 		051313DE246D01870042D929 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313DD246D01870042D929 /* TableViewCell.swift */; };
-		051313E1246D8D8C0042D929 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313DF246D8D8C0042D929 /* UserInfoCell.swift */; };
-		051313E2246D8D8C0042D929 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051313E0246D8D8C0042D929 /* UserInfoCell.xib */; };
 		051313E4246DBC420042D929 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051313E3246DBC420042D929 /* UserController.swift */; };
 		054EA774245CA65700095990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054EA76D245CA65700095990 /* ViewController.swift */; };
 		054EA77A245CA65700095990 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054EA773245CA65700095990 /* NavigationController.swift */; };
@@ -24,10 +21,8 @@
 		05765C41245BF62700013DF8 /* HomePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C40245BF62700013DF8 /* HomePhoto.swift */; };
 		05765C43245BF64F00013DF8 /* AboutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C42245BF64F00013DF8 /* AboutText.swift */; };
 		05765C45245BF67000013DF8 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C44245BF67000013DF8 /* Contacts.swift */; };
-		05765C47245BF69500013DF8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C46245BF69500013DF8 /* UserInfo.swift */; };
 		05765C4C245BF74600013DF8 /* AboutTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C4B245BF74600013DF8 /* AboutTextController.swift */; };
 		05765C4E245BF76000013DF8 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C4D245BF76000013DF8 /* ContactsController.swift */; };
-		05765C50245BF79600013DF8 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C4F245BF79600013DF8 /* UserInfoController.swift */; };
 		05765C53245BF7BF00013DF8 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C52245BF7BF00013DF8 /* ContactsCell.swift */; };
 		05765C57245C0BCA00013DF8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C56245C0BCA00013DF8 /* HomeController.swift */; };
 		A3224273EA5A3905C2DD4258 /* Pods_HW_27_Home_About_Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099004121BA6CE3F6876B809 /* Pods_HW_27_Home_About_Contacts.framework */; };
@@ -36,10 +31,7 @@
 /* Begin PBXFileReference section */
 		051313D7246BB85E0042D929 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		051313D9246D00A00042D929 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
-		051313DB246D00DD0042D929 /* SeparatedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatedProtocol.swift; sourceTree = "<group>"; };
 		051313DD246D01870042D929 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		051313DF246D8D8C0042D929 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
-		051313E0246D8D8C0042D929 /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		051313E3246DBC420042D929 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		054EA76D245CA65700095990 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		054EA773245CA65700095990 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -53,10 +45,8 @@
 		05765C40245BF62700013DF8 /* HomePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePhoto.swift; sourceTree = "<group>"; };
 		05765C42245BF64F00013DF8 /* AboutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutText.swift; sourceTree = "<group>"; };
 		05765C44245BF67000013DF8 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
-		05765C46245BF69500013DF8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		05765C4B245BF74600013DF8 /* AboutTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTextController.swift; sourceTree = "<group>"; };
 		05765C4D245BF76000013DF8 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
-		05765C4F245BF79600013DF8 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
 		05765C52245BF7BF00013DF8 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
 		05765C56245C0BCA00013DF8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		099004121BA6CE3F6876B809 /* Pods_HW_27_Home_About_Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_27_Home_About_Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +73,6 @@
 				054EA773245CA65700095990 /* NavigationController.swift */,
 				051313D7246BB85E0042D929 /* TableViewController.swift */,
 				051313D9246D00A00042D929 /* NSObject.swift */,
-				051313DB246D00DD0042D929 /* SeparatedProtocol.swift */,
 				051313DD246D01870042D929 /* TableViewCell.swift */,
 			);
 			path = Base;
@@ -130,7 +119,6 @@
 				05765C40245BF62700013DF8 /* HomePhoto.swift */,
 				05765C42245BF64F00013DF8 /* AboutText.swift */,
 				05765C44245BF67000013DF8 /* Contacts.swift */,
-				05765C46245BF69500013DF8 /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,11 +126,10 @@
 		05765C48245BF6D500013DF8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05765C56245C0BCA00013DF8 /* HomeController.swift */,
 				05765C4B245BF74600013DF8 /* AboutTextController.swift */,
 				05765C4D245BF76000013DF8 /* ContactsController.swift */,
-				05765C4F245BF79600013DF8 /* UserInfoController.swift */,
 				051313E3246DBC420042D929 /* UserController.swift */,
-				05765C56245C0BCA00013DF8 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,8 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				05765C52245BF7BF00013DF8 /* ContactsCell.swift */,
-				051313DF246D8D8C0042D929 /* UserInfoCell.swift */,
-				051313E0246D8D8C0042D929 /* UserInfoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -234,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051313E2246D8D8C0042D929 /* UserInfoCell.xib in Resources */,
 				05765C36245BF3E600013DF8 /* LaunchScreen.storyboard in Resources */,
 				05765C33245BF3E600013DF8 /* Assets.xcassets in Resources */,
 				05765C31245BF3E200013DF8 /* Main.storyboard in Resources */,
@@ -298,14 +282,10 @@
 				05765C57245C0BCA00013DF8 /* HomeController.swift in Sources */,
 				05765C53245BF7BF00013DF8 /* ContactsCell.swift in Sources */,
 				05765C2A245BF3E200013DF8 /* AppDelegate.swift in Sources */,
-				05765C50245BF79600013DF8 /* UserInfoController.swift in Sources */,
-				051313E1246D8D8C0042D929 /* UserInfoCell.swift in Sources */,
 				05765C4C245BF74600013DF8 /* AboutTextController.swift in Sources */,
-				05765C47245BF69500013DF8 /* UserInfo.swift in Sources */,
 				054EA774245CA65700095990 /* ViewController.swift in Sources */,
 				054EA77A245CA65700095990 /* NavigationController.swift in Sources */,
 				051313DA246D00A00042D929 /* NSObject.swift in Sources */,
-				051313DC246D00DD0042D929 /* SeparatedProtocol.swift in Sources */,
 				051313DE246D01870042D929 /* TableViewCell.swift in Sources */,
 				05765C41245BF62700013DF8 /* HomePhoto.swift in Sources */,
 				05765C4E245BF76000013DF8 /* ContactsController.swift in Sources */,
