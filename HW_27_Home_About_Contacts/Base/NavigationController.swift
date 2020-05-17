@@ -8,7 +8,9 @@
 import UIKit
 
 class NavigationController: UINavigationController {
-
+    override var shouldAutorotate: Bool {
+        return topViewController?.shouldAutorotate ?? true
+    }
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return self.topViewController?.supportedInterfaceOrientations ?? .all
     }

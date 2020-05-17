@@ -12,15 +12,15 @@ class ContactsController: ViewController, UITableViewDataSource, UITableViewDele
     
     @IBOutlet private var tableView: UITableView?
     @IBOutlet private var dataSource = [Any]()
-   
+    
     // MARK: - Setup
-         override func setup() {
-             super.setup()
+    override func setup() {
+        super.setup()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       dataSource.append(contentsOf: DataProvider.shared.models())
+        dataSource.append(contentsOf: DataProvider.shared.models())
         tableView?.reloadData()
         
     }
@@ -41,22 +41,21 @@ class ContactsController: ViewController, UITableViewDataSource, UITableViewDele
             if let cell = cell as? ContactsCell {
                 cell.model = model
             } 
-   
-}
+            
+        }
         return cell!
-}
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-      tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
+        super.tableView(tableView, didSelectRowAt: indexPath)
         
-       super.tableView(tableView, didSelectRowAt: indexPath)
-        
-
         if let model = dataSource[indexPath.row] as? Contacts,
-                   let controller = self.storyboard?.instantiateViewController(withIdentifier: "userController") as? UserController {
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "userController") as? UserController {
             controller.model = model
-                   self.navigationController?.pushViewController(controller, animated: true)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
-}
+    
 }

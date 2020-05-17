@@ -14,10 +14,10 @@ class HomeController: ViewController {
     @IBOutlet private var photoHome: UIImageView?
 
     override func setup() {
-          super.setup()
+        super.setup()
         self.title = "Home"
 
-       }
+    }
        
        override func viewDidLoad() {
            super.viewDidLoad()
