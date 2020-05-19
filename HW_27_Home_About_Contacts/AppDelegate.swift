@@ -10,13 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-var window: UIWindow?
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
+        
+        //MARK: - remove glare when clicking on a cell
+        window?.backgroundColor = .white
+        
         return true
+        
     }
-
 }
 
