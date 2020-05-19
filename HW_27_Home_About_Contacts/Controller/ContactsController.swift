@@ -8,28 +8,23 @@
 
 import UIKit
 
-class ContactsController: ViewController, UITableViewDataSource, UITableViewDelegate {
+class ContactsController: TableViewController {
     
-    @IBOutlet private var tableView: UITableView?
-    @IBOutlet private var dataSource = [Any]()
-    
-    // MARK: - Setup
     override func setup() {
         super.setup()
+        self.title = "Contacts"
     }
+    
+    // MARK: - Override
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource.append(contentsOf: DataProvider.shared.models())
         tableView?.reloadData()
-        
-    }
-    //MARK: - UITableViewDataSource
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //MARK: - UITableViewDataSource
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let model = dataSource[indexPath.row]
         var cell: UITableViewCell?
@@ -40,11 +35,12 @@ class ContactsController: ViewController, UITableViewDataSource, UITableViewDele
             cell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath)
             if let cell = cell as? ContactsCell {
                 cell.model = model
-            } 
+            }
             
         }
         return cell!
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -57,5 +53,4 @@ class ContactsController: ViewController, UITableViewDataSource, UITableViewDele
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    
 }

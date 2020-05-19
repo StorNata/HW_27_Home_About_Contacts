@@ -25,6 +25,7 @@
 		05765C4E245BF76000013DF8 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C4D245BF76000013DF8 /* ContactsController.swift */; };
 		05765C53245BF7BF00013DF8 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C52245BF7BF00013DF8 /* ContactsCell.swift */; };
 		05765C57245C0BCA00013DF8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05765C56245C0BCA00013DF8 /* HomeController.swift */; };
+		05B226CE2474291E00235A1B /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B226CD2474291E00235A1B /* InfoController.swift */; };
 		A3224273EA5A3905C2DD4258 /* Pods_HW_27_Home_About_Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099004121BA6CE3F6876B809 /* Pods_HW_27_Home_About_Contacts.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		05765C4D245BF76000013DF8 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		05765C52245BF7BF00013DF8 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
 		05765C56245C0BCA00013DF8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		05B226CD2474291E00235A1B /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		099004121BA6CE3F6876B809 /* Pods_HW_27_Home_About_Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_27_Home_About_Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57322AC0B1F1939E9B43E0B7 /* Pods-HW_27_Home_About_Contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_27_Home_About_Contacts.debug.xcconfig"; path = "Target Support Files/Pods-HW_27_Home_About_Contacts/Pods-HW_27_Home_About_Contacts.debug.xcconfig"; sourceTree = "<group>"; };
 		A397CCC346C3B7E3B62292B7 /* Pods-HW_27_Home_About_Contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_27_Home_About_Contacts.release.xcconfig"; path = "Target Support Files/Pods-HW_27_Home_About_Contacts/Pods-HW_27_Home_About_Contacts.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				05765C4B245BF74600013DF8 /* AboutTextController.swift */,
 				05765C4D245BF76000013DF8 /* ContactsController.swift */,
 				051313E3246DBC420042D929 /* UserController.swift */,
+				05B226CD2474291E00235A1B /* InfoController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					05765C25245BF3E200013DF8 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -289,6 +293,7 @@
 				051313DE246D01870042D929 /* TableViewCell.swift in Sources */,
 				05765C41245BF62700013DF8 /* HomePhoto.swift in Sources */,
 				05765C4E245BF76000013DF8 /* ContactsController.swift in Sources */,
+				05B226CE2474291E00235A1B /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +438,7 @@
 			baseConfigurationReference = 57322AC0B1F1939E9B43E0B7 /* Pods-HW_27_Home_About_Contacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64A5F5X892;
 				INFOPLIST_FILE = HW_27_Home_About_Contacts/Info.plist;
@@ -443,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Stornata.HW-27-Home-About-Contacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,6 +460,7 @@
 			baseConfigurationReference = A397CCC346C3B7E3B62292B7 /* Pods-HW_27_Home_About_Contacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64A5F5X892;
 				INFOPLIST_FILE = HW_27_Home_About_Contacts/Info.plist;
